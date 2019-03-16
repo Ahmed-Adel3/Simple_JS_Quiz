@@ -22,5 +22,5 @@ saveScore = e=>{
     highScores.sort( (a,b)=> b.score - a.score )
     highScores.splice(5);
     localStorage.setItem('highScores',JSON.stringify(highScores));
-    window.location.assign("/");
+    window.location.href ="./index.html"
 }
